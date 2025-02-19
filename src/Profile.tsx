@@ -34,7 +34,7 @@ interface Project {
     link: string;
 }
 
-const PlayerProfile = () => {
+const Profile = () => {
     const [activeTab, setActiveTab] = useState<string>('bio');
     const [isVisible, setIsVisible] = useState(false);
     const experienceRefs = useRef<HTMLDivElement[]>([]);
@@ -65,7 +65,7 @@ const PlayerProfile = () => {
             window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         } catch (error) {
             console.error('Error opening email client:', error);
-            alert('Unable to open email client. Please email me directly at greenstein.n@northeastern.edu');
+            alert('Unable to open email client. Please email me directly at ngreenstein3@gmail.com');
         }
     };
 
@@ -558,4 +558,4 @@ const StatBox: React.FC<StatBoxProps> = ({label, value}) => (
         <div className="text-[10px] sm:text-sm text-gray-400 text-center">{label}</div>
     </div>
 );
-export default PlayerProfile;
+export default Profile;

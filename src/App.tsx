@@ -1,12 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import PlayerProfile from "./PlayerProfile";
+import Profile from "./Profile";
 
 function App() {
   return (
     <div className="App">
-      <PlayerProfile></PlayerProfile>
+      <Profile></Profile>
     </div>
   );
 }
